@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------
+# Project-specific rules
+# ---------------------------------------------------------------
+# Raw and processed data are not versioned: the source dataset is
+# public (UCI) and is re-downloaded by a script, so the repository
+# stays small and the data pipeline stays reproducible.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Local database files (e.g. SQLite / DuckDB) built from the data
+*.db
+*.duckdb
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

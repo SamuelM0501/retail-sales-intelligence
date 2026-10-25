@@ -1,0 +1,16 @@
+# Core data manipulation
+pandas
+numpy
+
+# Reading the source dataset (distributed by UCI as .xlsx)
+openpyxl
+
+# Statistics
+scipy
+
+# Visualization (exploratory charts; final dashboard is built in Tableau Public)
+matplotlib
+seaborn
+
+# Jupyter kernel so VS Code can run notebooks inside the virtual environment
+ipykernel
